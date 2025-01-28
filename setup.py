@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="wordsegmenter",               # Package name
+    name="dylanswordsegmenter",               # Package name
     version="0.1.0",                        # Initial version
     description="A tool for segmenting concatenated words into valid words.",
     author="Dylan Denney",
