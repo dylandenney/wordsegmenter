@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="dylanswordsegmenter",               # Package name
-    version="0.1.0",                        # Initial version
+    version="0.1.1",                        # Initial version
     description="A tool for segmenting concatenated words into valid words.",
     author="Dylan Denney",
     author_email="dylandenney@gmail.com",

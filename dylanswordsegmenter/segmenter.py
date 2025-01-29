@@ -1,9 +1,15 @@
 import nltk
 from nltk.corpus import words
-# Ensure you have the nltk data loaded
-nltk.download('words')
-# Create a set of valid words from nltk words corpus
-valid_words = set(nltk.corpus.words.words())
+
+
+# Check if the words corpus is available, and download it if missing
+try:
+    valid_words = set(words.words())  # Try to load words corpus
+except LookupError:
+    print("NLTK words corpus not found. Downloading now...")
+    nltk.download('words')  # Download only if missing
+    valid_words = set(words.words())  # Load again after downloading
+
 # Add common abbreviations and domain-specific terms to the valid words set
 custom_words = {
     "cust", "vend", "info", "dim", "trans", "tax", "docu",
